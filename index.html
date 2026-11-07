@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+body{
+margin: 0px;
+
+}
+
+#bajin{
+height: 100vh;
+width: 100vw;
+background-color: hwb(0 54% 46%);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+  
+}
+
+.bottdiv1{
+width: 140px;
+height: 40px;
+margin: 10px;
+border-radius: 20px;
+border-style: solid;
+border-width: 2px;
+border-color: #FF7B00;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: "";
+}
+
+  
+  #tujm{
+height: auto;
+width: 200px;
+margin: 20px;
+margin-top: -15%;
+
+}
+
+.nanj{
+background-color:#23C55E;
+width: 10px;
+height: 10px;
+border-radius: 50px;
+margin-left: 10px;
+}
+
+.fonr{
+font-size: 8px;
+color: #FF7B00
+}
+
+.fona{
+color:#FEFEFE;
+margin: 5px;
+}
+
+.fas{
+font-size: 13px;
+color: #FF7B00
+}
+
+.fas1{
+color: #ffffff
+}
+
+  
+</style>
+</head>
+<body>
+<div id="bajin">
+<img src="https://cdn.jsdelivr.net/gh/sjhusb165/msk2@13b53371d8588cde1bd5c5f355b367bd81164945/%E5%BF%83%E6%B4%9B.gif"
+  id="tujm">
+<h5 class="fona" style="position: relative;">請選擇網路</h5>
+<h5 class="fona" >*如果不能連結或不能截圖，請嘗試切換線路</h5>
+
+<div class="bottdiv1" id="bottdiva" style="background-color: #FF7B00">
+<p class="fas fas1" id="fas1">線路1</p>
+<div class="nanj" ></div>
+<p class="fonr fas1" id="fas1b">順暢</p>
+</div>
+
+<div class="bottdiv1" id="bottdivb" style="background-color: ''">
+<p class="fas" id="fas2">線路2</p>
+<div class="nanj"></div>
+<p class="fonr" id="fas2b">順暢</p>
+</div>
+  
+<div class="bottdiv1" id="bottdivc">
+<p class="fas" id="fas3">線路3</p>
+<div class="nanj"></div>
+<p class="fonr" id="fas3b">順暢</p>
+</div>
+
+<div class="bottdiv1" id="bottdivd">
+<p class="fas" id="fas4">線路4</p>
+<div class="nanj"></div>
+<p class="fonr" id="fas4b">順暢</p>
+</div>
+
+<div class="bottdiv1" id="bottdive">
+<p class="fas" id="fas5">線路5</p>
+<div class="nanj"></div>
+<p class="fonr" id="fas5b">順暢</p>
+</div>
+
+</div>
+
+<div id="tiotop" style="background: linear-gradient(to bottom,
+#ffd1dc, #e6d6ff, #ceb1ff);
+height:0px; width: 100vw; position: absolute;
+top: 0px; overflow: hidden; transition: height 0.3s">
+<h1 id="h1aj">正在跳转至主站<br>"luo712.top"</h1>
+<p id="pht1"></p>
+<div id="caca1" style="position: absolute;color: red;
+ top: 0px; right: 0px">
+  ╳退出跳转
+  <div>
+</div>
+
+<script>
+let bot = document.getElementById("bottdiva");
+let bot2 = document.getElementById("bottdivb");
+let bot3 = document.getElementById("bottdivc");
+let bot4 = document.getElementById("bottdivd");
+let bot5 = document.getElementById("bottdive");
+
+let font1 = document.getElementById("fas1");
+let font1b = document.getElementById("fas1b");
+
+let font2 = document.getElementById("fas2");
+let font2b = document.getElementById("fas2b");
+
+let font3 = document.getElementById("fas3");
+let font3b = document.getElementById("fas3b");
+
+let font4 = document.getElementById("fas4");
+let font4b = document.getElementById("fas4b");
+
+let font5 = document.getElementById("fas5");
+let font5b = document.getElementById("fas5b");
+
+let caca1 = document.getElementById("caca1")
+
+let tiotop = document.getElementById("tiotop");
+let h1aj = document.getElementById("h1aj");
+let pht1 = document.getElementById("pht1");
+
+let tingdin = null;
+let tingdin2 = null;
+let dianjia = "";
+
+bot.onclick = function () {
+window.location.href = "https://www.yuanshen.com/#/"};
+
+bot2.onclick = function () {
+ghj();
+bot2.style.backgroundColor = "#FF7B00";
+font2.style.color = "#ffffff";
+font2b.style.color = "#ffffff";
+window.location.href = "https://ak.hypergryph.com/"
+};
+  
+bot3.onclick = function () {
+ghj();
+bot3.style.backgroundColor = "#FF7B00";
+font3.style.color = "#ffffff";
+font3b.style.color = "#ffffff";
+window.location.href = "https://endfield.hypergryph.com/#home"
+};
+
+  
+bot4.onclick = function () {
+ghj();
+bot4.style.backgroundColor = "#FF7B00";
+font4.style.color = "#ffffff";
+font4b.style.color = "#ffffff";
+window.location.href = "https://game.bilibili.com/blhx/"
+};
+  
+bot5.onclick = function () {
+gjv();
+ghj();
+bot5.style.backgroundColor = "#FF7B00";
+font5.style.color = "#ffffff";
+font5b.style.color = "#ffffff";
+aj6();
+dojisi();
+};
+  
+  
+  
+//清除字背色
+function ghj() {
+bot.style.backgroundColor = "";
+bot2.style.backgroundColor = "";
+bot3.style.backgroundColor = "";
+bot4.style.backgroundColor = "";
+bot5.style.backgroundColor = "";
+font1.style.color = "#FF7B00";
+font1b.style.color = "#FF7B00";
+font2.style.color = "#FF7B00";
+font2b.style.color = "#FF7B00";
+font3.style.color = "#FF7B00";
+font3b.style.color = "#FF7B00";
+font4.style.color = "#FF7B00";
+font4b.style.color = "#FF7B00";
+font5.style.color = "#FF7B00";
+font5b.style.color = "#FF7B00";
+}
+
+//转至top
+function aj6() {
+tiotop.style.height = 100 + "vh";
+tingdin2 = setTimeout(
+function (){
+window.location.href = "https://luo712.top"
+},5000)};
+
+function dojisi() {
+tingdin = setInterval(
+function () {
+kh57();
+dianjia += ".";
+pht1.innerText = "加载中" + dianjia;
+},500)};
+
+function kh57(params) {
+if (dianjia === "...") {
+dianjia = "";
+}};
+
+function gjv(params) {
+clearInterval(tingdin)
+};
+
+//关闭top
+caca1.onclick = function () {
+clearInterval(tingdin);
+clearTimeout(tingdin2);
+tiotop.style.height = "0px";
+ghj();
+bot.style.backgroundColor = "#FF7B00";
+font1.style.color = "#ffffff";
+font1b.style.color = "#ffffff";
+};
+
+
+
+
+
+</script>
+
+</body>
+</html>
